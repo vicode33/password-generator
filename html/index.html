@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="application-name" content="genera contraseñas seguras" />
+	<meta name="description" content="Una aplicacion que te permite generar contraseñas seguras" />
+	<meta name="keywords" content="crear contraseñas,  generar contraseñas seguras, generador de contraseñas" />
+	<meta name="author" content="Victor Vergara, vmvg08@hotmail.com" />
+    <title>Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+</head>
+<body>
+	
+    <div class="container">
+		
+		<div class="titles">
+		<h1>Password Generator</h1>
+		<p>Select password length</p>
+		</div>
+
+		<div class="radio-btn">
+		<input type="radio" id="length12" name="length" value="12" checked class="btn-radio">
+		<label for="length12" class="campo-texto">12 characters</label>
+		<input type="radio" id="length16" name="length" value="16" class="btn-radio" >
+		<label for="length16" class="campo-texto">16 characters</label>
+		</div>
+			
+		<div class="btns">
+		<button class="btn-submit"  id="generateBtn">Generate password</button>
+		<button class="btn-submit"  id="resetBtn">Restore</button>
+		<input class="input-pass" type="text" id="password" readonly>
+		</div> 
+
+	</div>
+
+<script type="text/javascript" src="/Javascript/generator.js"></script>    
+</body>
+</html>
